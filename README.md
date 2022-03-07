@@ -1,2 +1,2 @@
-# Python
- Python projects
+ # Python 🐍
+ My Python projects

@@ -1,1 +1,1 @@
-Projeto de automação para atualização de cotação de moedas
+Projeto de automação para atualização de cotação de moedas em uma planilha excel

@@ -4,7 +4,7 @@ conexao = mysql.connector.connect(
 
     host='localhost',
     user='root',
-    password='VN010817',
+    password='*******',
     database='dbwishlist',
 )
 

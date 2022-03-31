@@ -12,4 +12,4 @@ descricao = req_dic['weather'][0]['description'] # Filtrando informações desej
 
 temperatura = req_dic['main']['temp']-273.15 # Filtrando e convertendo Kelvin para graus Celsius.
 
-print(descricao,f"{temperatura}ºC")
+print(descricao,f"{temperatura: .2f}ºC")

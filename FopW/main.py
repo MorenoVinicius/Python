@@ -1,6 +1,6 @@
 import PyPDF2
 
-with open('0485 - Recibos de Pagamentos 03.2023.pdf', 'rb') as pdf_file:
+with open('', 'rb') as pdf_file:
     pdf_reader = PyPDF2.PdfReader(pdf_file)
     num_pages = len(pdf_reader.pages)
 

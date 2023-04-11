@@ -1,1 +1,1 @@
-* Codigo criado em Python para separar paginas em um unico pdf e salvar cada pagina em um arquivo
+* Código criado em Python para criar um relatório em CSV usando como base diversos arquivos XML.

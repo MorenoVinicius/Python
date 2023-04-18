@@ -12,7 +12,7 @@ arquivos = os.listdir(pasta)
 dhEmi = []
 xFant = []
 nNF = []
-vProd = []
+vBC = []
 vNF = []
 CFOP = []
 
@@ -45,8 +45,8 @@ for arquivo in arquivos:
             elif elem.tag.endswith('nNF'):
                 nNF.append(elem.text)
                 adicionou_xFant = False
-            elif elem.tag.endswith('vProd'):
-                vProd.append(elem.text)
+            elif elem.tag.endswith('vBC'):
+                vBC.append(elem.text)
             elif elem.tag.endswith('vNF'):
                 vNF.append(elem.text)
             elif elem.tag.endswith('CFOP'):
@@ -58,10 +58,10 @@ with open('dados.csv', mode='w', newline='') as arquivo_csv:
     writer = csv.writer(arquivo_csv)
 
     # escrever o cabeçalho do arquivo CSV
-    writer.writerow(['dhEmi', 'xFant', 'nNF', 'vProd', 'vNF', 'CFOP'])
+    writer.writerow(['dhEmi', 'xFant', 'nNF', 'vBC', 'vNF', 'CFOP'])
 
     # escrever os dados no arquivo CSV
     for i in range(len(dhEmi)):
-        linha = [dhEmi[i], xFant[i], nNF[i], vProd[i], vNF[i], CFOP[i]]  # acessar o primeiro item da lista xFant
+        linha = [dhEmi[i], xFant[i], nNF[i], vBC[i], vNF[i], CFOP[i]]  # acessar o primeiro item da lista xFant
         writer.writerow(linha)
         print(linha)
